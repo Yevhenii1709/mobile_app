@@ -39,12 +39,135 @@ header {
 }
 .stores {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
 }
 .stores a {
   text-decoration: none;
 }
+.second__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.experience__wr {
+  position: relative;
+  background: url(imeges/Rectangle.jpg)
+  left top no-repeat;
+}
+.second {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.experience {
+  display: flex;
+  align-items: stretch;
+}
+.experience__photo {
+  flex: 0 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience__content {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: 133px 0 117px;
+  max-width: 500px;
+}
+.experience__what {
+  font-weight: bold;
+  line-height: 21px;
+  text-decoration: none;
+  color: #00ADEE;
+}
+.experience__learn {
+  font-weight: bold;
+  line-height: 21px;
+  text-decoration: none;
+  color: #00ADEE;
+}
+/*
+.experience__subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px; 
+  color: #00adee;
+  margin: 0;
+}
+.experience__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px; 
+  color: #333333;
+  margin: 27px 0;
+}
+
+.experience__description {
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #4f4f4f;
+}
+
+.experience__action {
+  margin-top: 22px;
+}
+
+.experience__photo-img {
+  width: 75%;
+  transform: translateY(10%);
+}
+
+@media (max-width: 980px) {
+  .experience__content {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 760px) {
+  .experience__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    background: url("/img/ronaldo_2x.png") 
+    center top no-repeat;
+    background-size: cover;
+    z-index: -2;
+    pointer-events: none;
+  }
+
+  .experience__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    background: linear-gradient(
+        270deg,
+        #ffffff 5.16%,
+        rgba(255, 255, 255, 0) 67.14%
+      ),
+      rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience {
+    flex-direction: column-reverse;
+  }
+}
+*/
 footer {
   position: absolute;
   width: 100%;
