@@ -27,5 +27,62 @@
   }
   .stores {
     padding: 0 0 59px 0;
+    justify-content: center;
+  }
+  .experience {
+    flex-direction: column-reverse;
+  }
+  .experience__content {
+    text-align: center;
+  }
+  .features__wrapper {
+    background: #FAFAFA;
   }
 }
+@media (min-width: 721px) {
+  .experience__wr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    z-index: -2;
+    background: url(imeges/Rectangle.jpg)
+    left top no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+  .experience__wr::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, 
+    rgba(255, 255, 255, 0) 67.14%), 
+    rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    pointer-events: none;
+  }
+  .features__wrapper {
+    background: url(imeges/bgblue.png);
+    background-size: cover;
+    pointer-events: none;
+  }
+}
+/*
+@media (max-width: 980px) {
+  .experience__content {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience {
+    flex-direction: column-reverse;
+  }
+}
+*/
