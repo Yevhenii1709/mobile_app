@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link rel="stylesheet" href="desktop-style.css">
   <link rel="stylesheet" href="mobile-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <title>Sports</title>
 </head>
 
@@ -110,11 +112,38 @@
       </ul>
     </div>
   </article>
-  <article>
-    <h2>What Our Users Say</h2>
-    <img src="imeges/Group 700.jpg" alt="">
-    <img src="imeges/Group 701.jpg" alt="">
-    <img src="imeges/Group 702.jpg" alt="">
+  <article class="comments__swiper">
+    <div class="comments__wrapper">
+      <h2>What Our Users Say</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="imeges/Group 700.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 701.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 702.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 701.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 700.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 702.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="imeges/Group 701.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
   </article>
   <article class="logos__wraper">
     <h2 class="logos__titel">We have been featured in</h2>
@@ -183,6 +212,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
