@@ -21,22 +21,53 @@
     letter-spacing: 0.03em;
   }
   .app p {
+    padding: 0;
     font-size: 16px;
     line-height: 23px;
     text-align: center;
   }
   .stores {
-    padding: 0 0 59px 0;
+    padding-bottom: 59px;
     justify-content: center;
   }
   .experience {
-    flex-direction: column-reverse;
+    align-items: center;
+    flex-direction: column;
+  }
+  .experience__wr {
+    position: relative;
   }
   .experience__content {
     text-align: center;
+    padding: 54px 0;
+  }
+  .experience__photo {
+    margin: 0;
+  }
+  .logos {
+    flex-wrap: wrap;
+  }
+  .interface__content {
+    text-align: center;
+    padding: 62px;
   }
   .features__wrapper {
     background: #FAFAFA;
+  }
+  .features__content {
+    text-align: center;
+  }
+  .features__content h2 {
+    color: #333333;
+  }
+  .features__list li {
+    color: #4F4F4F;
+  }
+  .icon {
+    fill: #00ADEE;
+  }
+  .team {
+    flex-direction: column;
   }
 }
 @media (min-width: 721px) {
@@ -73,16 +104,3 @@
     pointer-events: none;
   }
 }
-/*
-@media (max-width: 980px) {
-  .experience__content {
-    padding: 60px 0;
-  }
-}
-
-@media (max-width: 760px) {
-  .experience {
-    flex-direction: column-reverse;
-  }
-}
-*/
