@@ -41,10 +41,13 @@
     padding: 54px 0;
   }
   .experience__photo {
-    margin: 0;
+    margin: 0; 
   }
   .logos {
     flex-wrap: wrap;
+  }
+  .interface {
+    justify-content: center;
   }
   .interface__content {
     text-align: center;
@@ -80,6 +83,7 @@
     width: 160px;
     z-index: 10;
     height: 100%;
+    color: red;
     background: linear-gradient(90deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
   }
   .users-says::before {
@@ -97,6 +101,18 @@
     flex-direction: column;
     padding: 0 20px;
     align-items: flex-start;
+  }
+  .logos a {
+    padding: 0 20px;
+  }
+  .logos {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .logos a {
+    padding-bottom:30px;
   }
 }
 
@@ -132,5 +148,49 @@
     background: url(imeges/bgblue.png);
     background-size: cover;
     pointer-events: none;
+  }
+  .interface__wr {
+    background: url(imeges/SAMPLE05.png) no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .section__first {
+    background: url(imeges/many-phones.jpg) right no-repeat;
+  }
+}
+@media (max-width: 1300px) {
+  .app {
+    padding: 0 20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  .app h1 {
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .app p {
+    padding: 0;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .section__first {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .stores {
+    padding-bottom: 59px;
+    justify-content: center;
   }
 }
