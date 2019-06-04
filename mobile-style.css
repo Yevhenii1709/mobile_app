@@ -108,6 +108,12 @@
   .logos {
     justify-content: center;
   }
+  .information_links {
+    margin: 34px 0;
+  }
+  .social_network {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 500px) {
